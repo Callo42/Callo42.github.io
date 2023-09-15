@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using HDF5 With Pandas: HDFStore
+title: Using HDF5 With Pandas
 date: 2023-09-15 14:05 +0800
 categories: [Gleanings, Technical Supports] 
 tags: [Pandas, HDF5]
