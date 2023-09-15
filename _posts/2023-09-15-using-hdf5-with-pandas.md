@@ -12,9 +12,9 @@ math: true
 ## HDFStore
 - HDFStore is a [Pandas](https://pandas.pydata.org/) library that offering some top-level operations on [HDF5](https://www.hdfgroup.org/) files with [Pytables](https://www.pytables.org/) as its base implementation.
 - Some useful Pandas official HDFStore documentations could be found at:
-  - https://pandas.pydata.org/docs/reference/io.html#hdfstore-pytables-hdf5, several most frequently used api.
-  - https://pandas.pydata.org/docs/user_guide/io.html#hdf5-pytables, a detailed documentation introducing the most fundamental operations using HDFStore.
-  - https://pandas.pydata.org/docs/user_guide/cookbook.html#cookbook-hdf, A cookbook containing HDFStore usage, including ``how to add attributes to dataset`` for example.
+  - [https://pandas.pydata.org/docs/reference/io.html#hdfstore-pytables-hdf5], several most frequently used api.
+  - [https://pandas.pydata.org/docs/user_guide/io.html#hdf5-pytables], a detailed documentation introducing the most fundamental operations using HDFStore.
+  - [https://pandas.pydata.org/docs/user_guide/cookbook.html#cookbook-hdf], A cookbook containing HDFStore usage, including ``how to add attributes to dataset`` for example.
 
 ## Some basic operations:
 
