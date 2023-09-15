@@ -114,6 +114,18 @@ pwa:
 
 paginate: 10
 
+# configure the jekyll-compose features
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      categories:
+      tags:
+      math: true
+    posts:
+      categories:
+      tags:
+      math : true
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
