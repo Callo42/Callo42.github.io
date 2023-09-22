@@ -53,7 +53,7 @@ math: true
     - Set ``avatar`` to ``/commons/avatar.png`` , create ``/commons/`` directory under the root directory of your website if needed. Then put your avatar pitcure in it.
   - To deploy:
     -  In your website's github repo, <kbd>settings</kbd> > <kbd>Pages</kbd> .Then, in the **Source** section (under Build and deployment), select GitHub Actions from the dropdown menu.
-    ![github action](../commons/img/2023/Screenshot%202023-09-22%20131811.png)
+    ![github action](../../commons/img/2023/Screenshot%202023-09-22%20131811.png)
   - Changing the favicon
     - First create the favicon by the website <https://realfavicongenerator.net/>, click the button <kbd>Select your Favicon</kbd> image to upload your image file. In the next step, the webpage will show all usage scenarios. You can keep the default options, scroll to the bottom of the page, and click the button <kbd>Generate your Favicons and HTML code</kbd> to generate the favicon.
     - Then download the generated package, unzip and delete the following two from the extracted files:
