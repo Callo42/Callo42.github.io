@@ -33,4 +33,32 @@ Using a uniform paradigm while commiting changes is recommended. Here one such t
   git cz
   ```
   to replace the original ``git commit`` command, then following the prompts, and your commit is done.
+
+## Commit Format Check (validate-commit-msg) DEPRECATED
+> NOTE the `validate-commit-msg` npm package is tagged as **DEPRECATED** by npm!
+{: .prompt-danger}
+- To enable automatically checking the commit format, one could use [validate-commit-msg](https://github.com/conventional-changelog-archived-repos/validate-commit-msg) to perform pre-commit hook, raising error if the commit is not following the `Angular Commit Guidelines`.
+- Install:
+  - `ghooks`
+    - One could found helpful instructions under [npm-ghooks](https://www.npmjs.com/package/ghooks), the installation only needs one-line-command:
+      ```console
+      npm install ghooks --save-dev
+      ```
+  - `validate-commit-msg`
+    - Installing:
+      ```console
+      npm install --save-dev validate-commit-msg
+      ```
+  - Enable `validate-commit-msg`
+    - Copy [This File](https://github.com/conventional-changelog-archived-repos/validate-commit-msg/blob/master/index.js) into your git repo and rename it as `validata-commit-msg.js`, for example.
+    - Then add the following scripts in `package.json`
+      ```json
+       "config": {
+        "ghooks": {
+          "commit-msg": "./validate-commit-msg.js"
+        }
+      }
+      ```
+    - This enables the format check while `commit-msg` by running the `validata-commit-msg` script with `ghooks` 
+# References
 - For more information about the commit format or **how to generate change log automatically**, see [the bolg here](https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
