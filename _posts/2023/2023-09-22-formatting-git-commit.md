@@ -33,4 +33,4 @@ Using a uniform paradigm while commiting changes is recommended. Here one such t
   git cz
   ```
   to replace the original ``git commit`` command, then following the prompts, and your commit is done.
-- For more information about the commit format or **how to generate change log automatically**, see [the bolg here](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+- For more information about the commit format or **how to generate change log automatically**, see [the bolg here](https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
