@@ -68,7 +68,7 @@ and then adding the following line:
 
 ```console
 # m h  dom mon dow   command
-  * 4 * * * /bin/bash /home/ubuntu/path_to_your_sync_sudo_script/sync_sudo.sh > /home/ubuntu/path_to_your_sync_sudo_script/sync_sudo.log 2>&1
+  0 4 * * * /bin/bash /home/ubuntu/path_to_your_sync_sudo_script/sync_sudo.sh > /home/ubuntu/path_to_your_sync_sudo_script/sync_sudo.log 2>&1
 ```
 
 This would run a backup following the script `sync_sudo.sh` everyday at 4 am
