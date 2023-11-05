@@ -90,3 +90,4 @@ For `flake8` error codes, see [here](https://flake8.pycqa.org/en/latest/user/err
 
 For reference of `flake8`, see [here](https://flake8.pycqa.org/en/latest/index.html)
 
+A helpful blog [here](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/)
