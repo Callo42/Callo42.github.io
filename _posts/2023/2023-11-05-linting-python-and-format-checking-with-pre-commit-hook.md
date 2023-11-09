@@ -73,18 +73,47 @@ the content of `.pre-commit-config.yaml`
 
 For all the hooks available, see [list here](https://pre-commit.com/hooks.html).
 
-### Appendix
+To perform a pre-commit check for all files, one may run
 
-- If one want to omit some specific PEP8 format standards,
-first creating a file named `.flake8` and edit it as 
+```console
+pre-commit run --all-files
+```
+
+This performs a pre-commit hook workflow for all the files in your 
+working directory.
+
+> Resolving Compatibility: by default, there might be incompatibility
+between `flake8` and `black`, see the following instructions for
+soving this.
+{: .prompt-warning}
+
+The solution is provided by [This Q&A](https://stackoverflow.com/questions/68161741/python-black-formatter-conflict-with-rule-flake8-w503-in-vscode)
+and [The official docs from black](https://github.com/psf/black/blob/06ccb88bf2bd35a4dc5d591bb296b5b299d07323/docs/guides/using_black_with_other_tools.md#flake8).
+The former one explains why use `extend-ignore` rather than `ignore` in flake8
+config file, and the latter one offers an example config file for using flake8
+with black.
+
+- First, create a file named `.flake8` in the home directory
+of your project.
+- Then edit it as
 
 ```
 [flake8]
-ignore = F841
+max-line-length = 88
+extend-ignore = E203
 ```
 
-This would ignore the error code F841 in `flake8`
-checking.
+- This would set the max line length to 88, which is used as default by
+`black` and ignore the error code `E203` which is not compatible with
+black. The reason for this is explained [here](https://github.com/psf/black/blob/06ccb88bf2bd35a4dc5d591bb296b5b299d07323/docs/guides/using_black_with_other_tools.md#flake8).
+- The `extend-ignore` used here is to avoid overwritting
+the default ignore settings. For example, `W503` is disabled by default, so
+if one use `extend-ignore` then this only **adds** a new ignore rule without
+modifying the original default. But if one uses `ignore = E203` then it set
+the entire ignore rule from scratch, which would in turn enable the `W503`
+and causing conflicts.
+
+### Appendix
 
 For `flake8` error codes, see [here](https://flake8.pycqa.org/en/latest/user/error-codes.html#)
 
