@@ -2,7 +2,7 @@
 layout: post
 title: Commands Cheat Sheet
 date: 2023-11-26 14:05 +0800
-categories: [Gleanings, Technical Supports]
+categories: [Favourites, Technical Supports]
 tags: [Command Line, Cheat Sheet]
 math: false
 ---
