@@ -96,4 +96,7 @@ sudo useradd -r -m -U -d /home/git -s /bin/bash git
     git push -u origin 
     ```
 
+# References
+- https://linuxize.com/post/how-to-setup-a-git-server/
+- https://www.howtogeek.com/devops/how-to-set-up-a-private-git-server/
 
