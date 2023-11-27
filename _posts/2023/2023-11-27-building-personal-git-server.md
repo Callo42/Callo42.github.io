@@ -97,6 +97,6 @@ sudo useradd -r -m -U -d /home/git -s /bin/bash git
     ```
 
 # References
-- https://linuxize.com/post/how-to-setup-a-git-server/
-- https://www.howtogeek.com/devops/how-to-set-up-a-private-git-server/
+- <https://linuxize.com/post/how-to-setup-a-git-server/>
+- <https://www.howtogeek.com/devops/how-to-set-up-a-private-git-server/>
 
