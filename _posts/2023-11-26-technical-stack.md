@@ -8,3 +8,11 @@ math: false
 ---
 # Technical Stack
 Recording technical stacks that I have used during DevOps.
+
+# Style Guide
+## Google Style Guide
+  - [Main Page](https://google.github.io/styleguide/)
+  - [Shell Style Guide](https://google.github.io/styleguide/shellguide.html#s5-formatting)
+
+## PEP8
+  - [PEP8](https://peps.python.org/pep-0008/)
