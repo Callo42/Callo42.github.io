@@ -6,14 +6,14 @@ categories: [Gleanings, Technical Supports]
 tags: [pre-commit hook, git, python]
 math: False
 ---
-# Using Pre-commit Hooks to Lint and Check Format of Python Files
+## Using Pre-commit Hooks to Lint and Check Format of Python Files
 
 Pre-commit hooks are used to do some pre-commit automation
 like code linting and format checking before git commit.
 If the hook raise an error exit, for example, the format 
 check is failed, then that commit is aborted.
 
-## Using pre-commit package to manage pre-commit hooks
+### Using pre-commit package to manage pre-commit hooks
 
 A very user-friendly python package is [pre-commit](https://pre-commit.com/),
 which offers maintainence of various pre-commit hooks.
@@ -21,7 +21,7 @@ which offers maintainence of various pre-commit hooks.
 Here we take python linting and format checking as an example
 to show how to install `pre-commit` and how to invoke it.
 
-### Installaton
+#### Installaton
 
 ```console
 pip install pre-commit
@@ -69,7 +69,7 @@ to  install the newly added pre-commit-hooks.
 the content of `.pre-commit-config.yaml`
 {: .prompt-warning}
 
-### Usage
+#### Usage
 
 For all the hooks available, see [list here](https://pre-commit.com/hooks.html).
 
@@ -113,7 +113,7 @@ modifying the original default. But if one uses `ignore = E203` then it set
 the entire ignore rule from scratch, which would in turn enable the `W503`
 and causing conflicts.
 
-### Appendix
+#### Appendix
 
 For `flake8` error codes, see [here](https://flake8.pycqa.org/en/latest/user/error-codes.html#)
 

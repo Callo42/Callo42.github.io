@@ -7,10 +7,10 @@ tags: [git]
 math: false
 ---
 
-# Formatting Git Commits
+## Formatting Git Commits
 Using a uniform paradigm while commiting changes is recommended. Here one such tool is introduced to help generate standard git commit message.
 
-## Commitizen
+### Commitizen
 - `Commitizen` is a commit message formatting tool that gives prompts while committing. See <https://github.com/commitizen/cz-cli> for installation instructions.
   - run
     ```console
@@ -34,7 +34,7 @@ Using a uniform paradigm while commiting changes is recommended. Here one such t
   ```
   to replace the original ``git commit`` command, then following the prompts, and your commit is done.
 
-## Commit Format Check (validate-commit-msg) DEPRECATED
+### Commit Format Check (validate-commit-msg) DEPRECATED
 > NOTE the `validate-commit-msg` npm package is tagged as **DEPRECATED** by npm!
 {: .prompt-danger}
 - To enable automatically checking the commit format, one could use [validate-commit-msg](https://github.com/conventional-changelog-archived-repos/validate-commit-msg) to perform pre-commit hook, raising error if the commit is not following the `Angular Commit Guidelines`.
@@ -60,5 +60,5 @@ Using a uniform paradigm while commiting changes is recommended. Here one such t
       }
       ```
     - This enables the format check while `commit-msg` by running the `validata-commit-msg` script with `ghooks` 
-# References
+## References
 - For more information about the commit format or **how to generate change log automatically**, see [the bolg here](https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)

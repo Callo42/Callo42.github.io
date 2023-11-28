@@ -6,12 +6,12 @@ categories: [Favourites, Technical Supports]
 tags: [Command Line, Cheat Sheet]
 math: false
 ---
-# Commands Cheat Sheet
+## Commands Cheat Sheet
 Recording commands that I have used during DevOps, and 
 providing a quick reference for future use.
 
 
-# Git
+## Git
 
 - Formatting git log output (from [Liao Xuefeng's blog](https://www.liaoxuefeng.com/wiki/896043488029600/898732837407424))
     ```console

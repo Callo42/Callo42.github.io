@@ -7,13 +7,13 @@ tags: [Git, Git server]
 math: false
 ---
 
-# Building Personal Git Server
+## Building Personal Git Server
  - In some situations, one may want to build up their own git server, 
 either on a server that one has access or simply on another computer 
 that is connect to the same LAN (local area network). Here is a brief
 introduction for the latter one.
 
-## Prerequests
+### Prerequests
 
 - Let's say, one have two computers connect to the same LAN, with the
 following hostname and ip address:
@@ -27,7 +27,7 @@ following hostname and ip address:
 machine, which allows you to modify your git repo on your
 `user` machine and then push to `server`.
 
-## Building
+### Building
 
 - Most of the contents here are from [This helpful website](https://linuxize.com/post/how-to-setup-a-git-server/).
 - First make sure that on your `server` machine, the software `git` is 
@@ -96,7 +96,7 @@ sudo useradd -r -m -U -d /home/git -s /bin/bash git
     git push -u origin 
     ```
 
-# References
+## References
 - <https://linuxize.com/post/how-to-setup-a-git-server/>
 - <https://www.howtogeek.com/devops/how-to-set-up-a-private-git-server/>
 

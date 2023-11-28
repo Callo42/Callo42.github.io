@@ -7,7 +7,7 @@ tags: [Bash Script]
 math: false
 ---
 
-# Handling Bash Scripts Input With Options
+## Handling Bash Scripts Input With Options
 
 - To write bash scripts that accepts options and
 arguments in input, like most linux command does:
@@ -53,5 +53,5 @@ in the reference:
 
   - the while condition is a lot more readable and shows what the accepted options are
   - cleaner code; no counting the number of parameters and shifting 
-  - you can join options (e.g. -a -b -c → -abc)
+  - you can join options (e.g. `-a -b -c` → `-abc`)
   - However, a big disadvantage is that it doesn't support long options, only single-character options.

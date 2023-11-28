@@ -8,17 +8,17 @@ math: true
 ---
 
 
-# Using HDFStore (Pandas)
-## HDFStore
+## Using HDFStore (Pandas)
+### HDFStore
 - HDFStore is a [Pandas](https://pandas.pydata.org/) library that offering some top-level operations on [HDF5](https://www.hdfgroup.org/) files with [Pytables](https://www.pytables.org/) as its base implementation.
 - Some useful Pandas official HDFStore documentations could be found at:
   - <https://pandas.pydata.org/docs/reference/io.html#hdfstore-pytables-hdf5>, several most frequently used api.
   - <https://pandas.pydata.org/docs/user_guide/io.html#hdf5-pytables>, a detailed documentation introducing the most fundamental operations using HDFStore.
   - <https://pandas.pydata.org/docs/user_guide/cookbook.html#cookbook-hdf>, A cookbook containing HDFStore usage, including ``how to add attributes to dataset`` for example.
 
-## Some basic operations:
+### Some basic operations:
 
-### Creating HDF5 File and Store Data into it
+#### Creating HDF5 File and Store Data into it
 
 - The ``HDFStore`` method open ups a HDF5 file with *append* mode as default, and could be used with the ``with`` syntax. (Automatically close the file after writing)
 
@@ -119,7 +119,7 @@ In [9]: with pd.HDFStore('test.hdf5') as store:
 
 - On the left we can see the hierarchy of the groups added to the storage, in the middle we have the type of dataset and on the right there is the list of attributes attached to the dataset. Attributes are pieces of metadata you can stick on objects in the file and the attributes we see here are automatically created by Pandas in order to describe the information required to recover the data from the hdf5 storage system.
 
-## Adding Attributes to Dataset
+### Adding Attributes to Dataset
 
 To add attributes to a dataset:
 
@@ -155,7 +155,7 @@ To add attributes to a dataset:
 
     This deletes the metadata attribute for 'df1'.
 
-# References
+## References
 1. <https://dzone.com/articles/quick-hdf5-pandas#:~:text=We%20can%20create%20a%20HDF5%20file%20using%20the,a%20dataset%20into%20the%20file%20we%20just%20created%3A>
 2. <https://en.moonbooks.org/Articles/How-to-add-metadata-to-a-data-frame-with-pandas-in-python-/#:~:text=To%20save%20a%20pandas%20data%20frame%20with%20metadata,%3D%20%7B%27scale%27%3A0.1%2C%27offset%27%3A15%7D%20store.get_storer%20%28%27dataset_01%27%29.attrs.metadata%20%3D%20metadata%20store.close%20%28%29>
 3. <https://pandas.pydata.org/docs/reference/io.html#hdfstore-pytables-hdf5>

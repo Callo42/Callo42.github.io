@@ -7,9 +7,9 @@ tags: [Github Page]
 math: true
 ---
 
-# Using Github Page to Make Personal Blog
+## Using Github Page to Make Personal Blog
 
-## Register Github Page
+### Register Github Page
 
 - To use github page to make personal blog, firstly register at github page, following the instructions from offical pages:
   - <https://pages.github.com/>
@@ -28,12 +28,12 @@ math: true
         git push -u origin main
         ```
 
-## Offical Documentations of Github Page:
+### Offical Documentations of Github Page:
 
 - For detailed documentation and instructions, see the offical documents:
   - <https://docs.github.com/en/pages>
 
-## Using Jekyll Theme
+### Using Jekyll Theme
 
 - The theme used here is a jekyll theme ``Chirpy``: <https://github.com/cotes2020/jekyll-theme-chirpy>
   - For instructions, see <https://chirpy.cotes.page/>

@@ -7,7 +7,7 @@ tags: [bup, backup tool]
 math: False
 ---
 
-# bup: A Linux backup tool
+## bup: A Linux backup tool
 
 [bup](https://bup.github.io/) is a backup tool for creating incremental backups for Linux
 system. It saves files in a compressed way and creating snapshots each time a backup is made 
@@ -15,7 +15,7 @@ by creating links bewteen backups.
 
 It also supports remote backup, like rsync.
 
-## A typical workflow
+### A typical workflow
 
 To set a periodic backup, it is recommended to use crontab (more specificlly,
 in the root user domain of crontab) to run bup commands.
@@ -77,7 +77,7 @@ and saving log to the `sync_sudo.log`
 For more information and the usage of `bup`, see the [github repo](https://bup.github.io/)
 or the [webpage](https://bup.github.io/).
 
-# Some backup tools reminder
+## Some backup tools reminder
 
 Some other backup tools may be useful in different scenes: 
 
